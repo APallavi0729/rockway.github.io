@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"  integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a06b82c26d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="icon" sizes="192x192" href="https://www.wix.com/favicon.ico">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+       *{
+            padding: 0%;
+            margin: 0%;
+        }
+   nav{
+     width: auto;
+    height: 14vh;
+    background-color: black;
+    display: flex;
+   justify-content: space-between;
+    position: fixed;
+   width: 100%;
+   overflow: hidden;
+  position: absolute;
+   
+    
+   
+    
+}
+.firstbox{
+    display: flex;
+    align-items: center;
+    margin-left: 6vh;
+   
+}
+.logos{
+    margin: 0.5vh;
+   
+width: 200px;
+height: 80px;
+}
+.home{
+   display: flex; 
+   margin-left: 200px;
+   
+  
+}
+.one{
+    margin:15px;
+    color:white;
+    font-size: large;
+
+}
+
+.get{
+    border:none;
+    margin: 1vh;
+    padding: 2vh 4vh 2vh 4vh;
+    border-radius: 4px;
+    font-size: medium;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+.get1{
+    border:none;
+    margin: 1vh;
+    padding: 2vh 4vh 2vh 4vh;
+    border-radius: 4px;
+    font-size: medium;
+    color: white;
+    background-color: rgba(255, 26, 26, 0.866);
+    cursor: pointer;
+}
+.get:hover{
+    background-color: rgba(255, 26, 26, 0.866);
+}
+.second{
+     position: relative;
+     left: 26vh;
+  
+}
+.one{
+    border:none;
+    margin: 1vh;
+    padding: 1vh 3vh 1vh 3vh;
+    border-radius: 4px;
+    font-size: medium;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+.one:hover{
+    background-color: white;
+    color: black;
+}
+
+     .box{
+      width: 100%;
+          height:750px;
+          display: flex;
+         background-color: black;
+      }
+      
+      .boxmain{
+          border: none;
+        
+          color:white;
+   }
+      .boxmain2{
+          border: none;
+          padding-left: 40px;
+          width: 45% ;
+          filter: sepia(0.1);
+          margin-right: 180px;
+      
+     }
+      .onea{
+  border:none;
+width: 300px;
+  padding: 2vh 4vh 2vh 4vh;
+  border-radius: 4px;
+  font-size: medium;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size:18px;
+}
+.oneact{
+    border:none;
+    margin: 1vh;
+    padding: 1vh 3vh 1vh 3vh;
+    border-radius: 4px;
+    font-size: medium;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.box{
+      width: 100%;
+          height:600px;
+          display: flex;
+         background-color: black;
+      }
+      
+      .boxmain{
+          border: none;
+        
+          color:white;
+   }
+      .boxmain2{
+          border: none;
+          padding-left: 40px;
+          width: 65% ;
+          filter: sepia(0.1);
+          margin-right: 220px;
+      
+     }
+      .onea{
+  border:none;
+width: 300px;
+  padding: 2vh 4vh 2vh 4vh;
+  border-radius: 4px;
+  font-size: medium;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size:18px;
+}
+.content{
+  padding-left:120px;
+}
+.act{
+  font-size: 18px;
+  padding-top: 100px;
+  cursor: pointer;
+  padding-left: 15px;
+ 
+}
+
+h1{
+    margin-top: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+   text-align: center;
+  color: #131316;
+}
+.body-content{
+    height:10vh;
+    text-align: center;
+    font-size: medium;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 80px;
+
+}
+.heading{
+    
+    width: auto;
+    text-decoration:solid;
+    font-size:  52px;     
+}
+.para-graph{
+    padding-top: 50px;
+     font-size: 24px;
+     color: grey;
+}
+.red{
+    color:red;
+    font-size: 60px;
+}
+.our-arena{
+    padding-top: 370px;
+}
+
+.column1{
+    align-items: center;
+    float: left;
+    width: 28%;
+   
+
+}
+.row1{
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 10px;
+}
+.row1::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.image7{
+    margin-left: 30px;
+    height: 400px;
+    width: 420px;
+    border-radius: 20px;
+}
+.image15{
+    height: 205px;
+    width: 300px;
+    padding-bottom: 25px;
+   
+}
+.image11{
+    height: 205px;
+    width: 300px;
+    padding-bottom: 25px;
+}
+.upper{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+
+}
+.name{
+    margin-top: 70px;
+    margin-right: 60px;
+}
+footer{
+    position: absolute;
+  padding-top: 100%;
+  margin-top: 100px;
+    background: #111;
+    height: auto;
+    width: 100vw;
+ padding-top: 40px;
+    color: #fff;
+    background-color: #000;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: grey;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+  
+
+}
+.footer-menu ul{
+  display: flex;
+  
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
+.imgfooter{
+    height: 80px;
+    width: 150px;
+}
+
+
+</style>
+</head><body>
+    <nav>
+        <div class="firstbox">
+           <img src="logo.png "class="logos"/>
+            <div class="home">
+                <a href="index.html"style="text-decoration:none;">   <btton type="button"class="oneact">Home</btton></a> 
+                <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
+                <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
+                    <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
+                        <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one">Blogs</btton></a>
+            </div>
+             <div class="second">
+                <button class="get" href="">LogIn</a>
+                <button class="get1"href="">Sin Up</button>
+             </div>
+        </div></nav>
+       
+       
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="box">
+            <div class="boxmain">
+        <div class="content">
+        <p class="h1"style="color:white;font-size:50px;padding-top:120px;font-weight: bolder;">Simple solution for complex routine</p>
+        <p class="h2"style="color:red;font-size:44px;font-weight: bolder;">- you belong here.</p>
+        
+        <p class="h3"style="color:white;font-size:24px; word-spacing: 0.6rem;">Loreum ipsum  dolor sit amet,consectetur adipiscing elit. Tincidunt</p>
+        <br>
+        <br>
+        <btton class="onea">Join Now</btton><btton class="act">FREE ROUTINE PLAN <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        </div>
+            </div>
+            <div class="boxmain2">
+                <img src="images/image5.jpg"style="width:550px;height:600px;padding-left:50px">
+        
+           
+           </div>
+            </div>
+        </div>
+        <br>
+        <div class="body-content">
+            <h1 class="heading">Our Story<span class="red">.</span></h1>
+            <p class="para-graph">Rocky Fitness is a specialised small group training gym ... We are located in Walkinstown, Dublin 12.Rocky Fitness is a friendly and motivating gym environment. Lorem ipsum dolor sit amet, consectetur adipisicing elit.  </p>
+            <p class="para-graph"> Reiciendis nemo praesentium tenetur, a sequi quibusdam, dolorum aspernatur perspiciatis perferendis autem exercitationem nulla, quasi quisquam minus. Dolore quod maiores sunt. Ipsum!</p>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+      <div class="our-arena">
+        <h1 class="heading">Our Arena<span class="red">.</span></h1>
+      </div>
+      <div class="row1">
+        <div class="column1"style="margin-left: 30px;margin-right:30px;">
+            <img class="image7" src="images/image7.jpg" alt="">
+        </div>
+        <div class="column1"style="padding-left:90px;">
+            <img class="image15" src="images/image15.jpg" alt=""style=" border-radius: 20px;">
+            <img class="image15" src="images/image15.jpg" alt=""style=" border-radius: 20px;">
+        </div>
+        <div class="column1"style="padding-left:20px;margin-right:30px;">
+            <img class="image11" src="images/image11.jpg" alt=""style=" border-radius: 20px;">
+            <img class="image11" src="images/image11.jpg" alt=""style=" border-radius: 20px;">
+        </div>
+      </div>
+    
+      <br>
+      <br>
+      <br>
+    
+      <div class="our-pillars">
+        <h1 class="heading">Our Pillars<span class="red">.</span></h1>
+      </div>
+    
+      <div class="container text-center">
+      <div class="row upper">
+        <div class="col">
+            <img class="image19" src="images/image19.png" alt="">
+        </div>
+        <div class="col">
+            <h2 class="name">Ashutosh Rai</h2>
+        </div>
+        <div class="col">
+            <img class="image20" src="images/image20.png" alt="">
+        </div>
+        <div class="col">
+            <h2 class="name">Omdutt Rai</h2>
+        </div>        
+      </div>
+      <div class="row lower text-left">
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis adipiscing nibh quis ultrices nibh velit pellentesque. Arcu metus, commodo non praesent justo, nibh magna. Sed feugiat nibh in vitae morbi in. Maecenas 
+                Sed odio nunc, rutrum sed tincidunt non viverra eu quis. Quis arcu cras turpis nunc massa nisl facilisis amet. Tempor duis et massa ornare tincidunt. Bibendum ipsum nibh cras elementum condimentum sed semper. A et faucibus malesuada purus venenatis sociis iaculis integer sed.</p>
+        </div>
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis adipiscing nibh quis ultrices nibh velit pellentesque. Arcu metus, commodo non praesent justo, nibh magna. Sed feugiat nibh in vitae morbi in. Maecenas 
+                Sed odio nunc, rutrum sed tincidunt non viverra eu quis. Quis arcu cras turpis nunc massa nisl facilisis amet. Tempor duis et massa ornare tincidunt. Bibendum ipsum nibh cras elementum condimentum sed semper. A et faucibus malesuada purus venenatis sociis iaculis integer sed.</p>
+        </div>
+      </div>
+    </div>
+ <footer>
+    <div class="footer-content">
+        <img src="logo.png"class="imgfooter" >
+        <br>
+        <p>Rocky Fitness is a specialised small group training gym ... We are located in Walkinstown, Dublin 12. Rocky Fitness is a friendly and motivating gym environment.</p>
+        <br>
+        <br>
+        <div class="footer-menu">
+            <ul class="f-menu">
+                <li><a href="">Home</a></li>
+        <li><a href="">Workout</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Testimonials</a></li>
+        <li><a href="">Blogs</a></li>
+        <li><a href="">FAQs</a></li>
+            </ul>
+
+        </div>
+        <br>
+        <br>
+           
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </a></li>
+        </ul>
+    </div>
+    
+    </div>
+</body>
+</html>

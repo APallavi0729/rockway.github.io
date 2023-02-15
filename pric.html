@@ -1,0 +1,479 @@
+!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"  integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a06b82c26d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="icon" sizes="192x192" href="https://www.wix.com/favicon.ico">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script><style>
+    <style>
+         *{
+            padding: 0%;
+            margin: 0%;
+        }
+   nav{
+     width: auto;
+    height: 14vh;
+    background-color: black;
+    display: flex;
+   justify-content: space-between;
+    position: fixed;
+   width: 100%;
+   overflow: hidden;
+  position: absolute;
+   
+    
+   
+    
+}
+.firstbox{
+    display: flex;
+    align-items: center;
+    margin-left: 6vh;
+   
+}
+.logos{
+    margin: 0.5vh;
+   
+width: 200px;
+height: 80px;
+}
+.home{
+   display: flex; 
+   margin-left: 200px;
+   
+  
+}
+.one{
+    margin:15px;
+    color:white;
+    font-size: large;
+
+}
+
+.get{
+    border:none;
+    margin: 1vh;
+    padding: 2vh 4vh 2vh 4vh;
+    border-radius: 4px;
+    font-size: medium;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+.get1{
+    border:none;
+    margin: 1vh;
+    padding: 2vh 4vh 2vh 4vh;
+    border-radius: 4px;
+    font-size: medium;
+    color: white;
+    background-color: rgba(255, 26, 26, 0.866);
+    cursor: pointer;
+}
+.get:hover{
+    background-color: rgba(255, 26, 26, 0.866);
+}
+.second{
+     position: relative;
+     left: 26vh;
+  
+}
+.one{
+    border:none;
+    margin: 1vh;
+    padding: 1vh 3vh 1vh 3vh;
+    border-radius: 4px;
+    font-size: medium;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+.one:hover{
+    background-color: white;
+    color: black;
+}
+
+     .box{
+      width: 100%;
+          height:750px;
+          display: flex;
+         background-color: black;
+      }
+      
+      .boxmain{
+          border: none;
+        
+          color:white;
+   }
+      .boxmain2{
+          border: none;
+          padding-left: 40px;
+          width: 45% ;
+          filter: sepia(0.1);
+          margin-right: 180px;
+      
+     }
+      .onea{
+  border:none;
+width: 300px;
+  padding: 2vh 4vh 2vh 4vh;
+  border-radius: 4px;
+  font-size: medium;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size:18px;
+}
+.oneact{
+    border:none;
+    margin: 1vh;
+    padding: 1vh 3vh 1vh 3vh;
+    border-radius: 4px;
+    font-size: medium;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.content{
+  margin-left:120px;
+}
+.act{
+  font-size: 18px;
+  padding-top: 100px;
+  cursor: pointer;
+  padding-left: 15px;
+
+}
+
+.red{
+    color:red;
+    font-size: 60px;
+}
+.worknav{
+    text-align: center;
+    font-size: 38px;
+    padding-top: 50px;
+    
+    display: inline-block;
+    word-spacing: 0.5rem;
+font-weight: 500;
+height: 12vh;
+
+}
+.contbox{
+
+    height:25vh;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+footer{
+    position: absolute;
+  padding-top: 100%;
+  margin-top: 100%;
+    background: #111;
+    height: auto;
+    width: 100vw;
+ padding-top: 40px;
+    color: #fff;
+    background-color: #000;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: grey;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+  
+
+}
+.footer-menu ul{
+  display: flex;
+  
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
+.imgfooter{
+    height: 80px;
+    width: 150px;
+}
+.colum{
+    width: 300px;
+    height: 450px;
+    margin-left:30px;
+    margin-right:30px;
+    text-align: center;
+    display: inline-block;   
+    overflow: hidden;
+}
+.oneactp{
+   border:none;
+    margin: 1vh;
+    padding: 1vh 3vh 1vh 3vh;
+   width: 150px;
+    border-radius: 4px;
+    font-size: medium;
+ cursor: pointer;
+ 
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="firstbox">
+           <img src="logo.png "class="logos"/>
+            <div class="home">
+                <a href="index.html"style="text-decoration:none;">   <btton type="button"class="oneact">Home</btton></a> 
+            <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
+            <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
+                <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
+                    <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one">Blogs</btton></a>
+            </div>
+             <div class="second">
+                <button class="get" href="">LogIn</a>
+                <button class="get1"href="">Sin Up</button>
+             </div>
+        </div></nav>
+       
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+  <div class="box">
+    <div class="boxmain">
+<div class="content">
+<p class="h1"style="color:white;font-size:50px;padding-top:150px;font-weight: bolder;">Get training from our Experts </p>
+<p class="h2"style="color:red;font-size:42px;font-weight: bolder;">– we train you .</p>
+<br>
+<p class="h3"style="color:white;font-size:24px; word-spacing: 0.6rem;">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt </p>
+<br>
+<br>
+<btton class="onea">Join Now</btton><btton class="act">FREE ROUTINE PLAN <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+</div>
+    </div>
+    <div class="boxmain2">
+        <img src="images/image18.png"style="width:550px;height:750px;padding-left:50px">
+
+   
+   </div>
+    </div>
+</div>
+
+<br>
+
+<div class="workouts">
+    <p class="work"style="font-size:52px;font-weight:700; text-align: center;padding-top:100px;color:black;">Our Workouts<span class="red">.</span></p>
+ </div><div class="workn"style="text-align:center;">
+    <a href="workou.html"style="text-decoration:none;color:black;"><p class="worknav active-link"style="padding-left: 300px;padding-right: 80px;cursor: pointer;">Browse</p></a>   
+    <a href="collect.html"style="text-decoration:none;color:black;"><p class="worknav"style="padding-left: 80px;padding-right: 80px;cursor: pointer;">Collections</p></a>   
+    <a href="pric.html"style="text-decoration:none;color:black;"> <p class="worknav"style="padding-left: 80px;padding-right: 300px;cursor: pointer;">Plan</p></a>   
+     </div>
+</div>
+<br>
+<div class="contbox">
+    <!--
+<div class="brows"style="padding-top:70px;">
+    <p class=""style="font-size:48px;color:white;position:absolute;margin-top:200px;margin-left:70px;">Muscle Group</p>
+    <div class="firstcol"style="width:90%;height:250px;"><img src="body.jpg"style="width: 1200px;height:350px;border-radius:18px;">
+   </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p class=""style="font-size:48px;color:white;position:absolute;margin-top:200px;margin-left:70px;">Workout Focus</p>
+    <div class="secndcol"style="width:90%;height:250px;margin-top:30px;"><img src="body2.png"style="width: 1200px;height:350px;border-radius:18px;">
+        </div></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p class=""style="font-size:48px;color:white;position:absolute;margin-top:200px;margin-left:70px;">Eqipments</p>
+    <div class="thrdcol"style="width:90%;height:250px;margin-top:30px;"><img src="body3.jpg"style="width: 1200px;height:350px;border-radius:18px;">
+        </div></div>
+</div>-->
+
+<div class="plan">
+    <div class="rownext"style="padding-top: 100px;margin-left:30px;margin-right:30px;">
+        <div class="colum"style="background-color: rgb(182, 181, 181);">
+            <btton type="button"class="oneactp"style="background-color: black;color: white;margin-top: 50px;">Basic</btton>
+       <p class="ab"style="font-size:48px;font-weight:bold;padding-top:10px;color:black;">20<span style="font-size:28px;font-weight:bold;color:black;">$/month</span></p>
+       
+       <p class="de"style="padding-left:30px;text-align:left"><i class='fas fa-chevron-circle-right'></i> Unlimited gym access</p>
+       <p class="de"style="padding-left:30px;text-align:left"><i class='fas fa-chevron-circle-right'></i> 1 training programs</p>
+       <p class="de"style="padding-left:30px;text-align:left"><i class='fas fa-chevron-circle-right'></i> free fitness consultation</p>
+   <br>
+      <btton type="button"class="oneactp"style="background-color:white;color:black ;margin-top: 55px;border-color: black 3px;">JOIN US</btton>
+     </div>
+        <div class="colum"id="pop"style="transform: scale(1.1);background-color: black;color: white;">
+            <btton type="button"class="oneactp"style="background-color: white;color: black;margin-top: 50px;">Premium</btton>
+            <p class="ab"style="font-size:48px;font-weight:bold;padding-top:10px;color:white;">35<span style="font-size:28px;font-weight:bold;color:white;">$/month</span></p>
+          
+            <p class="de"style="padding-left:30px;text-align:left"><i class='fas fa-chevron-circle-right'></i> Unlimited gym access</p>
+            <p class="de"style="padding-left:30px;text-align:left"><i class='fas fa-chevron-circle-right'></i> 5 training programs</p>
+            <p class="de"style="padding-left:30px;text-align:left"><i class='fas fa-chevron-circle-right'></i> free fitness consultation</p>
+            <p class="de"style="padding-left:30px;text-align:left"><i class='fas fa-chevron-circle-right'></i> personal trainer</p>
+            <br>
+            <btton type="button"class="oneactp"style="background-color:white;color:black ;margin-top: 55px;border-color: black 3px;">JOIN US</btton>
+             </div>
+        <div class="colum"style="background-color: rgb(182, 181, 181);">
+            <btton type="button"class="oneactp"style="background-color: black;color: white;margin-top: 50px;">Elite</btton>
+            <p class="ab"style="font-size:48px;font-weight:bold;padding-top:10px;color:black;">49<span style="font-size:28px;font-weight:bold;color:black;">$/month</span></p>
+          
+            <p class="de"style="padding-left:30px;text-align:left"><i class='fas fa-chevron-circle-right'></i> Unlimited gym access</p>
+            <p class="de"style="padding-left:30px;text-align:left"><i class='fas fa-chevron-circle-right'></i> all training programs</p>
+            <p class="de"style="padding-left:30px;text-align:left"><i class='fas fa-chevron-circle-right'></i> free fitness consultation</p>
+      <br>
+      <btton type="button"class="oneactp"style="background-color:white;color:black ;margin-top: 55px;border-color: black 3px;">JOIN US</btton>
+        </div>
+    </div> 
+</div>
+</div>  
+  <br>
+  <footer>
+    <div class="footer-content">
+        <img src="logo.png"class="imgfooter" >
+        <br>
+        <p>Rocky Fitness is a specialised small group training gym ... We are located in Walkinstown, Dublin 12. Rocky Fitness is a friendly and motivating gym environment.</p>
+        <br>
+        <br>
+        <div class="footer-menu">
+            <ul class="f-menu">
+                <li><a href="">Home</a></li>
+        <li><a href="">Workout</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Testimonials</a></li>
+        <li><a href="">Blogs</a></li>
+        <li><a href="">FAQs</a></li>
+            </ul>
+
+        </div>
+        <br>
+        <br>
+           
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </a></li>
+        </ul>
+    </div>
+    
+    </div>
+</body>
+</html>
