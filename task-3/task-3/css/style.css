@@ -1,0 +1,268 @@
+body{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    
+    background: #FFFFFF;
+}
+.left-side{
+    height: 100vh;
+    width: 50%;
+    background-color: black;
+}
+
+.image1{
+    position: absolute;
+width: 720px;
+height: 899.82px;
+left: 0px;
+top: 0px;
+}
+.rectangle{
+    position: absolute;
+width: 720px;
+height: 900px;
+left: -1px;
+top: 0px;
+
+background: rgba(19, 19, 22, 0.75);
+}
+.logo{
+    position: absolute;
+width: 153px;
+height: 68px;
+left: 16px;
+top: 17px;
+}
+.quote{
+    position: absolute;
+width: 439px;
+height: 248px;
+left: 140px;
+top: 268px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 46px;
+line-height: 62px;
+/* or 135% */
+
+
+color: #FFFFFF;
+}
+.welcome{
+    position: absolute;
+width: 105px;
+height: 19px;
+left: 913px;
+top: 232px;
+
+/* font-family: 'Roboto'; */
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #2D3748;
+}
+.login{
+    position: absolute;
+width: 319px;
+height: 36px;
+left: 913px;
+top: 253px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+
+/* 900 */
+
+color: #1A202C;
+}
+.loginform{
+    position: absolute;
+width: 350px;
+height: 215px;
+left: 913px;
+top: 312px;
+}
+.form-label{
+    position: absolute;
+left: 0%;
+right: 79.71%;
+top: 0%;
+bottom: 91.16%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+/* 700 */
+
+color: #4A5568;
+}
+.form-control{
+    box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 13.95%;
+bottom: 62.79%;
+
+border: 1px solid #E8E8E8;
+border-radius: 5px;
+}
+.form-label2{
+    position: absolute;
+left: 0%;
+right: 88.57%;
+top: 42.33%;
+bottom: 48.84%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+/* 700 */
+
+color: #4A5568;
+}
+.form-control2{
+    box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 56.28%;
+bottom: 20.47%;
+
+border: 1px solid #E8E8E8;
+border-radius: 5px;
+}
+.remember-button{
+    position: absolute;
+left: 7.43%;
+right: 66.29%;
+top: 92.56%;
+bottom: 0%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+padding-right: 2px;
+padding-left: 2px;
+
+/* 800 */
+
+color: #2D3748;
+
+}
+
+.forgot-pss{
+    position: absolute;
+left: 67.71%;
+right: 0.29%;
+top: 92.56%;
+bottom: 0%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+/* 800 */
+
+color: #2C5282; 
+
+}
+.login-button{
+    position: absolute;
+left: 63.5%;
+right: 12%;
+top: 62%;
+bottom: 33%;
+
+background: #04C45C;
+border-radius: 5px;
+}
+.login-button-text{
+    position: absolute;
+left: 39.48%;
+right: 39.19%;
+top: 30%;
+bottom: 32%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.google-button{
+    position: absolute;
+left: 63.5%;
+right: 12%;
+top: 68.5%;
+bottom: 26.2%;
+
+/* 800 */
+
+background: #2D3748;
+border-radius: 5px;
+}
+.google-button-text{
+    position: absolute;
+left: 31.7%;
+right: 22.48%;
+top: 30%;
+bottom: 32%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.icon{
+    color: #FFFFFF;
+}
+.last-text{
+    position: absolute;
+width: 272px;
+height: 19px;
+left: 952px;
+top: 805px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #616161;
+}

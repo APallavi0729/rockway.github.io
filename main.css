@@ -1,0 +1,20 @@
+.h1{
+    color:white;font-size:44px;padding-top:150px;font-weight: bolder;
+  }
+  .h2{
+    color:red;font-size:34px;font-weight: bolder;
+  }
+  .h3{
+    color:rgb(184, 178, 178);font-size:18px;
+    
+  }
+  @media (max-width:500px) {
+  .h1{
+    color:white;font-size:38px;font-weight: bolder;
+  }.h2{
+    color:red;font-weight: bolder;font-size:28px;
+  }
+  .h3{
+    color:rgb(184, 178, 178);font-size:18px;
+  }
+}

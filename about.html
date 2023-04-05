@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rockway Fitness</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -25,9 +25,21 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="icon" sizes="192x192" href="https://www.wix.com/favicon.ico">
+   <link rel="icon" sizes="192x192" href="images/gym-logo.png">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="main.css">
+  <!--  <link rel="stylesheet" href="css/resabo.css"> -->
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6LRGVNJF87"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6LRGVNJF87');
+</script>
     <style>
        *{
             padding: 0%;
@@ -48,6 +60,8 @@
    
     
 }
+.box2img{width:550px;height:600px;padding-left:50px}
+
 .firstbox{
     display: flex;
     align-items: center;
@@ -60,6 +74,9 @@
 width: 200px;
 height: 80px;
 }
+.cp{
+    display: none;
+}
 .home{
    display: flex; 
    margin-left: 200px;
@@ -71,6 +88,16 @@ height: 80px;
     color:white;
     font-size: large;
 
+}
+.one{
+    border:none;
+    margin: 1vh;
+    padding: 1vh 3vh 1vh 3vh;
+    border-radius: 4px;
+    font-size: medium;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .get{
@@ -93,7 +120,7 @@ height: 80px;
     background-color: rgba(255, 26, 26, 0.866);
     cursor: pointer;
 }
-.get:hover{
+.active2,.get:hover{
     background-color: rgba(255, 26, 26, 0.866);
 }
 .second{
@@ -101,17 +128,8 @@ height: 80px;
      left: 26vh;
   
 }
-.one{
-    border:none;
-    margin: 1vh;
-    padding: 1vh 3vh 1vh 3vh;
-    border-radius: 4px;
-    font-size: medium;
-    color: white;
-    background-color: transparent;
-    cursor: pointer;
-}
-.one:hover{
+
+.active,.one:hover{
     background-color: white;
     color: black;
 }
@@ -209,8 +227,9 @@ h1{
    text-align: center;
   color: #131316;
 }
+
 .body-content{
-    height:10vh;
+    height:auto;
     text-align: center;
     font-size: medium;
     padding-left: 200px;
@@ -222,55 +241,19 @@ h1{
     
     width: auto;
     text-decoration:solid;
-    font-size:  52px;     
+    font-size:  38px;    
 }
 .para-graph{
-    padding-top: 50px;
-     font-size: 24px;
+    padding-top: 20px;
+     font-size: 18px;
      color: grey;
+     text-align: justify;
 }
 .red{
     color:red;
     font-size: 60px;
 }
-.our-arena{
-    padding-top: 370px;
-}
 
-.column1{
-    align-items: center;
-    float: left;
-    width: 28%;
-   
-
-}
-.row1{
-    margin-top: 50px;
-    margin-left: 50px;
-    padding: 10px;
-}
-.row1::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-.image7{
-    margin-left: 30px;
-    height: 400px;
-    width: 420px;
-    border-radius: 20px;
-}
-.image15{
-    height: 205px;
-    width: 300px;
-    padding-bottom: 25px;
-   
-}
-.image11{
-    height: 205px;
-    width: 300px;
-    padding-bottom: 25px;
-}
 .upper{
     margin-top: 100px;
     margin-left: 50px;
@@ -285,10 +268,9 @@ h1{
 footer{
     position: absolute;
   padding-top: 100%;
-  margin-top: 100px;
     background: #111;
     height: auto;
-    width: 100vw;
+   width:100%;
  padding-top: 40px;
     color: #fff;
     background-color: #000;
@@ -346,7 +328,7 @@ footer{
 
 .footer-bottom{
     background: #000;
-    width: 100vw;
+    width: 100%;
     padding: 20px;
 padding-bottom: 40px;
     text-align: center;
@@ -387,6 +369,53 @@ display: block;
 .footer-menu ul li a:hover{
   color: #27bcda;
 }
+.imgfooter{
+    height: 80px;
+    width: 150px;
+}
+.row2{
+    display: none;
+}
+.column1{margin-left: 30px;margin-right:30px;}#column3{padding-left:90px;}#column2{padding-left:20px;margin-right:30px;}
+      .image11{border-radius: 20px;} .image15{border-radius: 20px;}
+      .our-arena{
+    padding-top: 20px;
+}
+
+.column1{
+    align-items: center;
+    float: left;
+    width: 28%;
+   
+
+}
+.row1{
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 10px;
+}
+.row1::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.image7{
+    margin-left: 30px;
+    height: 400px;
+    width: 420px;
+    border-radius: 20px;
+}
+.image15{
+    height: 205px;
+    width: 300px;
+    padding-bottom: 25px;
+   
+}
+.image11{
+    height: 205px;
+    width: 300px;
+    padding-bottom: 25px;
+}
 
 @media (max-width:500px) {
 .footer-menu ul{
@@ -394,32 +423,247 @@ display: block;
   margin-top: 10px;
   margin-bottom: 20px;
 }
+.content{
+  margin-left: 15px;
+  margin-right: 15px;
 }
-.imgfooter{
-    height: 80px;
-    width: 150px;
+.content{
+  padding-left:10px;
+}
+.logos{
+width: 150px;
+height: 70px;
+
+}
+.upper{
+    display: none;
+}
+.cp{
+    display: block;
+
+   
+    text-align: justify;
+    
 }
 
+nav{
+    height: 15vh;
+    background-image: linear-gradient(to right, rgba(69, 73, 71, 0.863),rgba(58, 59, 59, 0.808));
+
+    display: flex;
+   justify-content: space-between;
+    
+   width: 100%;
+   overflow: hidden;
+}
+
+.home{
+display: none;
+}
+.second{
+  display: none;
+}
+.box{
+     width: 100%;
+          height:100vh;
+          display:flex;
+          flex-direction: column;
+          background-image: -webkit-gradient(linear, left top, right top, from(rgba(69, 73, 71, 0.863)), to(rgba(58, 59, 59, 0.808))), url(images/image5.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(69, 73, 71, 0.863)), to(rgba(58, 59, 59, 0.808)), url(images/image5.jpg);
+  background-image: -moz-linear-gradient(left, rgba(69, 73, 71, 0.863)), to(rgba(58, 59, 59, 0.808)), url(images/image5.jpg);
+  background-image: -o-linear-gradient(left, rgba(69, 73, 71, 0.863)), to(rgba(58, 59, 59, 0.808)), url(images/image5.jpg);
+  background-image: linear-gradient(to right, rgba(69, 73, 71, 0.863)), to(rgba(58, 59, 59, 0.808)), url(images/image5.jpg);
+  background-size: cover;
+         padding-right: 10px;
+         padding-left: 10px;
+      }
+      
+      .boxmain{
+          border: none;
+         width:100%;
+          color:white;
+   }
+      .boxmain2{
+        display: none;
+          border: none;
+       padding-top: 15vh;
+     }
+     .onea{
+  border:none;
+width: 100px;
+  padding: 1vh 3vh 1vh 3vh;
+  border-radius: 4px;
+  font-size: medium;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size:22px;
+}
+
+.act{
+  font-size: 14px;
+  padding-top: 100px;
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+.body-content{
+  width: 100%;
+    height:auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+   
+
+}
+.heading{
+ text-decoration:solid;
+ font-size:  28px;    
+}
+.para-graph{
+    padding-top: 30px;
+     font-size: 20px;
+     color: grey;
+}
+.btnjoin{  
+font-family: 'Inter';
+background-color: transparent;
+font-weight: 800;
+font-size: 24px;
+text-align: center;
+padding-top: 40px;
+padding-left: 50px;
+font-weight: bold;
+cursor: pointer;
+}
+.our-arena{
+  width:100%;
+ 
+}
+.our-pillars{
+    padding-top: 10px;
+}
+.column1{margin-left: 5px;margin-right:2px;}#column3{padding-left:2px;}#column2{padding-left:2px;margin-right:3px;}
+      .image11{border-radius: 10px;} .image15{border-radius: 10px;}
+      .our-arena{
+    padding-top: 5px;
+}
+.row1{
+    margin-top: 5px;
+    margin-left: 2px;
+ 
+}
+.row1::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.image7{
+ 
+ display: none;
+}
+.image15{
+    height: 205px;
+    width: 190px;
+    padding-bottom: 25px;
+   margin-left: 5px;
+   margin-right: 5px;
+}
+.image11{
+    height: 205px;
+    width: 190px;
+    padding-bottom: 25px;
+    margin-left: 5px;
+   margin-right: 5px;
+}
+}
 
 </style>
 </head><body>
-    <nav>
-        <div class="firstbox">
-           <img src="logo.png "class="logos"/>
-            <div class="home">
-                <a href="index.html"style="text-decoration:none;">   <btton type="button"class="oneact">Home</btton></a> 
-                <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
-                <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
-                    <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
-                        <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one">Blogs</btton></a>
-            </div>
-             <div class="second">
-                <button class="get" href="">LogIn</a>
-                <button class="get1"href="">Sin Up</button>
-             </div>
-        </div></nav>
-       
-       
+  <nav>
+    <div class="firstbox">
+      <a href="index.html"style="cursor: pointer;"><img src="logo.png "class="logos"/></a>   
+      
+       <div class="home"id="first">
+         <a href="index.html"style="text-decoration:none;">   <btton type="button"class="one active">Home</btton></a> 
+         <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
+         <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
+             <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
+                 <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one">Blogs</btton></a>
+       </div>
+       <div class="second"id="sec">
+        <button class="get"id="loggedin"><a href="form.html"style="text-decoration:none;color:white;">LogIn</a></button>
+        <button class="get active2"id="logout"style="display:none;"><a href=""style="text-decoration:none;color:white;">Log Out</a></button>
+        <button class="get active2"><a href="form.html"style="text-decoration:none;color:white;">Sin Up</a></button>
+        
+      </div>
+     
+          <span class="thirednav"style="" onclick="openNav()">&#9776;</span>
+        
+   </div>
+   <!--div class="mobile-navbar-btn">
+    <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+    <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+   </div
+ 
+   
+   <button class="nav-toggle-btn">
+    <span class="one"></span>
+    <span class="two"></span>
+    <span class="three"></span>
+  </button>-->
+  </nav>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html"style="text-decoration:none;">   <btton type="button"class="one active">Home</btton></a> 
+      <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
+      <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
+          <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
+              <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one">Blogs</btton></a>
+             <a href="form.html"style="text-decoration:none;color:white;"> <button type="button"class="get active2">Sin Up</button></a>
+             <a href="form.html"style="text-decoration:none;"> <btton type="button"class="get"id="loggedin">Login</btton></a>
+             <a href=""style="text-decoration:none;"> <btton type="button"class="get"id="logout"style="display:none;">Log Out</btton></a>
+    </div>
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+
+   <script>
+       // Add active class to the current button (highlight it)
+       var header = document.document.getElementById("first");
+       var btns = header.getElementsByClassName("one");
+       for (var i = 0; i < btns.length; i++) {
+         btns[i].addEventListener("click", function() {
+         var current = document.getElementsByClassName("active");
+         current[0].className = current[0].className.replace(" active", "");
+         this.className += " active";
+         });
+       }
+       </script>
+          <script>
+           // Add active class to the current button (highlight it)
+           var header = document.document.getElementById("sec");
+           var btns = header.getElementsByClassName("get");
+           for (var i = 0; i < btns.length; i++) {
+             btns[i].addEventListener("click", function() {
+             var current = document.getElementsByClassName("active2");
+             current[0].className = current[0].className.replace(" active2", "");
+             this.className += "active2";
+             });
+           }
+           </script>
+
+
+ 
         <br>
         <br>
         <br>
@@ -427,17 +671,16 @@ display: block;
         <div class="box">
             <div class="boxmain">
         <div class="content">
-        <p class="h1"style="color:white;font-size:50px;padding-top:120px;font-weight: bolder;">Simple solution for complex routine</p>
-        <p class="h2"style="color:red;font-size:44px;font-weight: bolder;">- you belong here.</p>
-        
-        <p class="h3"style="color:white;font-size:24px; word-spacing: 0.6rem;">Loreum ipsum  dolor sit amet,consectetur adipiscing elit. Tincidunt</p>
+        <p class="h1"style="">Simple solution for complex routine</p>
+        <p class="h2"style="">- you belong here.</p>
+        <p class="h3"style="">Loreum ipsum  dolor sit amet,consectetur adipiscing elit. Tincidunt</p>
         <br>
         <br>
-        <btton class="onea">Join Now</btton><btton class="act">FREE ROUTINE PLAN <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        <btton class="onea"><a href="pric.html#plan"style="color:black;text-decoration:none;">Join Now</a></btton><btton class="act"><a href="diet.html"style="color:white;text-decoration:none;">FREE ROUTINE PLAN <i class="fa fa-arrow-right" aria-hidden="true"></i></a></button>
         </div>
             </div>
             <div class="boxmain2">
-                <img src="images/image5.jpg"style="width:550px;height:600px;padding-left:50px">
+                <img src="images/image5.jpg"class="box2img"style="">
         
            
            </div>
@@ -456,24 +699,23 @@ display: block;
       <div class="our-arena">
         <h1 class="heading">Our Arena<span class="red">.</span></h1>
       </div>
-      <div class="row1">
-        <div class="column1"style="margin-left: 30px;margin-right:30px;">
+    <center><div class="row1">
+        <div class="column1"style="">
             <img class="image7" src="images/image7.jpg" alt="">
         </div>
-        <div class="column1"style="padding-left:90px;">
-            <img class="image15" src="images/image15.jpg" alt=""style=" border-radius: 20px;">
-            <img class="image15" src="images/image15.jpg" alt=""style=" border-radius: 20px;">
+        <div class="column1"id="column3"style="">
+            <img class="image15" src="images/image15.jpg" alt=""style=" ">
+            <img class="image15" src="images/image15.jpg" alt=""style="">
         </div>
-        <div class="column1"style="padding-left:20px;margin-right:30px;">
-            <img class="image11" src="images/image11.jpg" alt=""style=" border-radius: 20px;">
-            <img class="image11" src="images/image11.jpg" alt=""style=" border-radius: 20px;">
+        <div class="column1"id="column2"style="">
+            <img class="image11" src="images/image11.jpg" alt=""style=" ">
+            <img class="image11" src="images/image11.jpg" alt=""style=" ">
         </div>
-      </div>
-    
+    </div></center>
       <br>
       <br>
       <br>
-    
+      
       <div class="our-pillars">
         <h1 class="heading">Our Pillars<span class="red">.</span></h1>
       </div>
@@ -495,15 +737,25 @@ display: block;
       </div>
       <div class="row lower text-left">
         <div class="col">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis adipiscing nibh quis ultrices nibh velit pellentesque. Arcu metus, commodo non praesent justo, nibh magna. Sed feugiat nibh in vitae morbi in. Maecenas 
+          <div class="cp">
+            <center><img class="image19" src="images/image19.png" alt=""></center> 
+          <center><h2 class="name">Ashutosh Rai</h2></center>  </div>  
+            <br>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis adipiscing nibh quis ultrices nibh velit pellentesque. Arcu metus, commodo non praesent justo, nibh magna. Sed feugiat nibh in vitae morbi in. Maecenas 
                 Sed odio nunc, rutrum sed tincidunt non viverra eu quis. Quis arcu cras turpis nunc massa nisl facilisis amet. Tempor duis et massa ornare tincidunt. Bibendum ipsum nibh cras elementum condimentum sed semper. A et faucibus malesuada purus venenatis sociis iaculis integer sed.</p>
         </div>
         <div class="col">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis adipiscing nibh quis ultrices nibh velit pellentesque. Arcu metus, commodo non praesent justo, nibh magna. Sed feugiat nibh in vitae morbi in. Maecenas 
+            <div class="cp">
+              <center><img class="image20" src="images/image20.png" alt=""></center>
+                <center><h2 class="name">Omdutt Rai</h2> </center></div>
+                <br>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis adipiscing nibh quis ultrices nibh velit pellentesque. Arcu metus, commodo non praesent justo, nibh magna. Sed feugiat nibh in vitae morbi in. Maecenas 
                 Sed odio nunc, rutrum sed tincidunt non viverra eu quis. Quis arcu cras turpis nunc massa nisl facilisis amet. Tempor duis et massa ornare tincidunt. Bibendum ipsum nibh cras elementum condimentum sed semper. A et faucibus malesuada purus venenatis sociis iaculis integer sed.</p>
         </div>
       </div>
     </div>
+    <br>
+    <br>
  <footer>
     <div class="footer-content">
         <img src="logo.png"class="imgfooter" >
@@ -512,15 +764,15 @@ display: block;
         <br>
         <br>
         <div class="footer-menu">
-            <ul class="f-menu">
-                <li><a href="">Home</a></li>
-        <li><a href="">Workout</a></li>
-        <li><a href="">Pricing</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Testimonials</a></li>
-        <li><a href="">Blogs</a></li>
-        <li><a href="">FAQs</a></li>
-            </ul>
+          <ul class="f-menu">
+            <li><a href="index.html">Home</a></li>
+    <li><a href="workou.html">Workout</a></li>
+    <li><a href="pric.html">Pricing</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#testi">Testimonials</a></li>
+    <li><a href="blog.html">Blogs</a></li>
+    <li><a href="">FAQs</a></li>
+        </ul>
 
         </div>
         <br>
@@ -535,5 +787,68 @@ display: block;
     </div>
     
     </div>
+    <script>
+      'use strict';
+    
+    // navbar variables
+    const navbarNav = document.querySelector('.navbar-nav');
+    const navbarToggleBtn = document.querySelector('.nav-toggle-btn');
+    
+    // navbar toggle functionality
+    navbarToggleBtn.addEventListener('click', function () {
+    
+      navbarNav.classList.toggle('active');
+      this.classList.toggle('active');
+    
+    });
+     </script>
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+  apiKey: "AIzaSyB_AFcgzkoGZsd42LVnt8W0XSoCfRLV_CA",
+  authDomain: "rockway-proj.firebaseapp.com",
+  projectId: "rockway-proj",
+  storageBucket: "rockway-proj.appspot.com",
+  messagingSenderId: "913719884217",
+  appId: "1:913719884217:web:eb7db9c977121945275e68"
+};
+
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+  const analytics = getAnalytics(app);
+  const auth = getAuth();
+  console.log(app);
+
+
+
+  //----- Logout code start	  
+  document.getElementById("logout").addEventListener("click", function() {
+      signOut(auth).then(() => {
+          // Sign-out successful.
+          console.log('Sign-out successful.');
+          alert('Sign-out successful.');
+          document.getElementById('logout').style.display = 'none';
+          document.getElementById('loggedin').style.display = 'block';
+        }).catch((error) => {
+          // An error happened.
+          console.log('An error happened.');
+        });		  		  
+  });
+  //----- End
+
+</script>
 </body>
 </html>
+</body>
