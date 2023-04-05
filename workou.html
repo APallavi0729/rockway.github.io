@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rockway Fitness</title>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -16,7 +16,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- <link rel="icon" sizes="192x192" href="https://www.wix.com/favicon.ico">
+ <link rel="icon" sizes="192x192" href="images/gym-logo.png">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -28,16 +28,30 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
-  <link rel="icon" sizes="192x192" href="https://www.wix.com/favicon.ico">
+  <link rel="icon" sizes="192x192" href="images/gym-logo.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
- 
+ <link rel="stylesheet" href="index.css">
+ <link rel="stylesheet" href="main.css">
+ <link rel="stylesheet" href="css/reswork.css">
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6LRGVNJF87"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6LRGVNJF87');
+</script>
     <style>
          *{
             padding: 0%;
             margin: 0%;
+        }
+        .thir{
+          display: none;
         }
    nav{
      width: auto;
@@ -78,6 +92,16 @@ height: 80px;
     font-size: large;
 
 }
+.one{
+    border:none;
+    margin: 1vh;
+    padding: 1vh 3vh 1vh 3vh;
+    border-radius: 4px;
+    font-size: medium;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
 
 .get{
     border:none;
@@ -99,7 +123,7 @@ height: 80px;
     background-color: rgba(255, 26, 26, 0.866);
     cursor: pointer;
 }
-.get:hover{
+.active2,.get:hover{
     background-color: rgba(255, 26, 26, 0.866);
 }
 .second{
@@ -107,17 +131,7 @@ height: 80px;
      left: 26vh;
   
 }
-.one{
-    border:none;
-    margin: 1vh;
-    padding: 1vh 3vh 1vh 3vh;
-    border-radius: 4px;
-    font-size: medium;
-    color: white;
-    background-color: transparent;
-    cursor: pointer;
-}
-.one:hover{
+.active,.one:hover{
     background-color: white;
     color: black;
 }
@@ -196,25 +210,25 @@ height: 12vh;
     margin-right: 100px;
 }
 footer{
-    position: absolute;
-  padding-top: 100%;
-  margin-top: 100%;
+  position: absolute;
+ margin-top: 100%;
+margin-bottom: 0%;
     background: #111;
     height: auto;
-    width: 100vw;
+   width:100%;
  padding-top: 40px;
     color: #fff;
     background-color: #000;
 }
 .footer-content{
-    display: flex;
+  display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
 .footer-content h3{
-    font-size: 2.1rem;
+  font-size: 2.1rem;
     font-weight: 500;
     text-transform: capitalize;
     line-height: 3rem;
@@ -259,7 +273,7 @@ footer{
 
 .footer-bottom{
     background: #000;
-    width: 100vw;
+    width: 100%;
     padding: 20px;
 padding-bottom: 40px;
     text-align: center;
@@ -300,13 +314,175 @@ display: block;
 .footer-menu ul li a:hover{
   color: #27bcda;
 }
+.contowl{display: none;}
+.box2img{ width: 1200px;height:600px;padding-left:30px }
+.contimg{width: 1200px;height:350px;border-radius:18px;}
+.conth1{font-size:48px;color:white;position:absolute;margin-top:20px;margin-left:50px;}
+.conth2{font-size:48px;color:white;position:absolute;margin-top:280px;margin-left:50px;}
+.conth3{font-size:48px;color:white;position:absolute;margin-top:280px;margin-left:50px;}
+.worknavph{display: none;}
+.maincontent{
+    color: gray;
+ font-size: 18px;
+    text-align: justify;
+}
 
+.workouts  {
+  height:auto;
+  text-align: center;
+  font-size: medium;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 40px;
+
+} 
+.work{
+  font-weight: 700;
+  width: auto;
+  text-decoration:solid;
+  font-size:  38px;    
+}
 @media (max-width:500px) {
+  .maincontent{
+    color: gray;
+ font-size: 18px;
+    text-align: justify;
+}
+
+.workouts  {
+  height:auto;
+  text-align: center;
+  font-size: medium;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+
+} 
+.work{
+  font-weight: 700;
+  width: auto;
+  text-decoration:solid;
+  font-size:  32px;    
+}
+  footer{
+    position: absolute;
+    margin-top: 300%;
+   
+       background: #111;
+       height: auto;
+      width:100%;
+    padding-top: 40px;
+       color: #fff;
+       background-color: #000;
+  }
 .footer-menu ul{
   display: flex;
   margin-top: 10px;
   margin-bottom: 20px;
 }
+.logos{
+width: 150px;
+height: 70px;
+
+}
+nav{
+    height: 18vh;
+    background-image: linear-gradient(to right, rgba(69, 73, 71, 0.863),rgba(58, 59, 59, 0.808));
+
+    display: flex;
+   justify-content: space-between;
+    
+   width: 100%;
+   overflow: hidden;
+}
+.content{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.home{
+display: none;
+}
+.second{
+  display: none;
+}
+.box{
+     width: 100%;
+          height:100vh;
+          display:flex;
+          flex-direction: column;
+          background-image: -webkit-gradient(linear, left top, right top, from(rgba(69, 73, 71, 0.863)), to(rgba(58, 59, 59, 0.808))), url(images/image14.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(69, 73, 71, 0.863)), to(rgba(58, 59, 59, 0.808)), url(images/image14.jpg);
+  background-image: -moz-linear-gradient(left, rgba(69, 73, 71, 0.863)), to(rgba(58, 59, 59, 0.808)), url(images/image14.jpg);
+  background-image: -o-linear-gradient(left, rgba(69, 73, 71, 0.863)), to(rgba(58, 59, 59, 0.808)), url(images/image14.jpg);
+  background-image: linear-gradient(to right, rgba(69, 73, 71, 0.863)), to(rgba(58, 59, 59, 0.808)), url(images/image14.jpg);
+  background-size: cover;
+         padding-right: 10px;
+         padding-left: 10px;
+      }
+      
+      .boxmain{
+          border: none;
+         width:100%;
+          color:white;
+   }
+      .boxmain2{
+        display: none;
+          border: none;
+       padding-top: 20vh;
+     }
+     .onea{
+  border:none;
+width: 100px;
+  padding: 1vh 2vh 1vh 2vh;
+  border-radius: 4px;
+  font-size: medium;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size:14px;
+}
+
+.act{
+  font-size: 16px;
+  padding-top: 100px;
+  cursor: pointer;
+  padding-left: 14px;
+}
+.listcon{
+display: none;
+}
+.box2img{ height:600px;}
+
+.contimg{width: 365px;height:350px;border-radius:18px;}
+.conth1{font-size:28px;color:white;position:absolute;margin-top:20px;margin-left:50px;}
+.conth2{font-size:28px;color:white;position:absolute;margin-top:280px;margin-left:50px;}
+.conth3{font-size:28px;color:white;position:absolute;margin-top:280px;margin-left:50px;}
+.contbox{
+
+height:25vh;
+margin-left: 10px;
+margin-right: 10px;
+}
+.worknav{display:none;}
+.worknavph{
+  text-align: center;
+    font-size: 22px;
+    padding-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+  display: inline-block;
+    word-spacing: 0.5rem;
+font-weight: bold;
+height: 12vh;
+}
+
+.maincontent{
+    color: gray;
+ font-size: 18px;
+    text-align: justify;
+}
+
 }
 .imgfooter{
     height: 80px;
@@ -320,40 +496,259 @@ display: block;
 }
 
 
-</style>
+#workn{padding-left: 300px;padding-right: 80px;cursor: pointer;}
+#workn2{padding-left: 80px;padding-right: 80px;cursor: pointer;}
+#workn3{padding-left: 80px;padding-right: 300px;cursor: pointer;}
+.secndcol:hover{transform: scale(1.1);}
+ .firstcol:hover{transform: scale(0.8);}
+ .thrdcol:hover{transform: scale(0.8);}
+ @media (max-width:300px) {
+  .maincontent{
+    color: gray;
+ font-size: 18px;
+    text-align: justify;
+}
+
+.workouts  {
+  height:auto;
+  text-align: center;
+  font-size: medium;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+
+} 
+.work{
+  font-weight: 700;
+  width: auto;
+  text-decoration:solid;
+  font-size:  32px;    
+}
+ .worknavph{
+ 
+  text-align: center;
+    font-size: 18px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  display: inline-block;
+    word-spacing: 0.5rem;
+font-weight: bold;
+height: 12vh;
+padding-left: 10px;
+    padding-right: 10px;
+}
+ }
+ @media (max-width:390px) {
+  .maincontent{
+    color: gray;
+ font-size: 18px;
+    text-align: justify;
+}
+
+.workouts  {
+  height:auto;
+  text-align: center;
+  font-size: medium;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+
+} 
+.work{
+  font-weight: 700;
+  width: auto;
+  text-decoration:solid;
+  font-size:  32px;    
+}
+ .worknavph{
+ 
+  text-align: center;
+    font-size: 18px;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  display: inline-block;
+    word-spacing: 0.5rem;
+font-weight: bold;
+height: 12vh;
+}
+ }
+ @media (max-width:300px) {
+  .maincontent{
+    color: gray;
+ font-size: 18px;
+    text-align: justify;
+}
+
+.workouts  {
+  height:auto;
+  text-align: center;
+  font-size: medium;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+
+} 
+.work{
+  font-weight: 700;
+  width: auto;
+  text-decoration:solid;
+  font-size:  32px;    
+}
+ .worknavph{
+ 
+  text-align: center;
+    font-size: 18px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  display: inline-block;
+    word-spacing: 0.5rem;
+font-weight: bold;
+height: 12vh;
+padding-left: 10px;
+    padding-right: 10px;
+}
+ }
+ @media (max-width:390px) {
+  .maincontent{
+    color: gray;
+ font-size: 18px;
+    text-align: justify;
+}
+
+.workouts  {
+  height:auto;
+  text-align: center;
+  font-size: medium;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+
+} 
+.work{
+  font-weight: 700;
+  width: auto;
+  text-decoration:solid;
+  font-size:  32px;    
+}
+ .worknavph{
+ 
+  text-align: center;
+    font-size: 18px;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  display: inline-block;
+    word-spacing: 0.5rem;
+font-weight: bold;
+height: 12vh;
+}
+ }
+ </style>
 </head>
 <body>
-    <nav>
-        <div class="firstbox">
-           <img src="logo.png"class="logos"/>
-            <div class="home">
-                <a href="index.html"style="text-decoration:none;">   <btton type="button"class="oneact">Home</btton></a> 
-            <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
-            <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
-                <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
-                    <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one">Blogs</btton></a>
-            </div>
-             <div class="second">
-                <button class="get" href="">LogIn</a>
-                <button class="get1"href="">Sin Up</button>
-             </div>
-        </div></nav>
-       
+  <nav>
+    <div class="firstbox">
+   <a href="index.html"style="cursor: pointer;"><img src="logo.png "class="logos"/></a>   
+      
+       <div class="home"id="first">
+         <a href="index.html"style="text-decoration:none;">   <btton type="button"class="one active">Home</btton></a> 
+         <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
+         <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
+             <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
+                 <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one">Blogs</btton></a>
+       </div>
+       <div class="second"id="sec">
+        <button class="get"id="loggedin"><a href="form.html"style="text-decoration:none;color:white;">LogIn</a></button>
+        <button class="get active2"id="logout"style="display:none;"><a href=""style="text-decoration:none;color:white;">Log Out</a></button>
+        <button class="get active2"><a href="form.html"style="text-decoration:none;color:white;">Sin Up</a></button>
+        
+      </div>
+     
+          <span class="thirednav"style="" onclick="openNav()">&#9776;</span>
+        
+   </div>
+   <!--div class="mobile-navbar-btn">
+    <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+    <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+   </div
+ 
+   
+   <button class="nav-toggle-btn">
+    <span class="one"></span>
+    <span class="two"></span>
+    <span class="three"></span>
+  </button>-->
+  </nav>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html"style="text-decoration:none;">   <btton type="button"class="one active">Home</btton></a> 
+      <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
+      <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
+          <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
+              <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one">Blogs</btton></a>
+             <a href="form.html"style="text-decoration:none;color:white;"> <button type="button"class="get active2">Sin Up</button></a>
+             <a href="form.html"style="text-decoration:none;"> <btton type="button"class="get"id="loggedin">Login</btton></a>
+             <a href=""style="text-decoration:none;"> <btton type="button"class="get"id="logout"style="display:none;">Log Out</btton></a>
+  </div>
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
 
-        <br>
-        <br>
+   <script>
+       // Add active class to the current button (highlight it)
+       var header = document.document.getElementById("first");
+       var btns = header.getElementsByClassName("one");
+       for (var i = 0; i < btns.length; i++) {
+         btns[i].addEventListener("click", function() {
+         var current = document.getElementsByClassName("active");
+         current[0].className = current[0].className.replace(" active", "");
+         this.className += " active";
+         });
+       }
+       </script>
+          <script>
+           // Add active class to the current button (highlight it)
+           var header = document.document.getElementById("sec");
+           var btns = header.getElementsByClassName("get");
+           for (var i = 0; i < btns.length; i++) {
+             btns[i].addEventListener("click", function() {
+             var current = document.getElementsByClassName("active2");
+             current[0].className = current[0].className.replace(" active2", "");
+             this.className += "active2";
+             });
+           }
+           </script>
+
+
+  <br>  
+
+  <br>
         <br>
         <br>
   <div class="box">
     <div class="boxmain">
 <div class="content">
-<p class="h1"style="color:white;font-size:50px;padding-top:150px;font-weight: bolder;">Get training from our Experts </p>
-<p class="h2"style="color:red;font-size:42px;font-weight: bolder;">– we train you .</p>
+<p class="h1"style="">Get training from our Experts </p>
+<p class="h2"style="">– we train you .</p>
+<p class="h3"style="">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt </p>
 <br>
-<p class="h3"style="color:white;font-size:24px; word-spacing: 0.6rem;">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt </p>
 <br>
-<br>
-<btton class="onea">Join Now</btton><btton class="act">FREE ROUTINE PLAN <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+<btton class="onea"><a href="pric.html#plan"style="color:black;text-decoration:none;">Join Now</a></btton><btton class="act"><a href="diet.html"style="color:white;text-decoration:none;">FREE ROUTINE PLAN <i class="fa fa-arrow-right" aria-hidden="true"></i></a></button>
 </div>
     </div>
     <div class="boxmain2">
@@ -365,21 +760,33 @@ display: block;
 </div>
 
 <br>
-<div class="workouts">
-    <p class="work"style="font-size:52px;font-weight:700; text-align: center;padding-top:100px;color:black;">Our Workouts<span class="red">.</span></p>
- </div><div class="workn"style="text-align:center;">
-  <a href="workou.html"style="text-decoration:none;color:black;"><p class="worknav active-link"style="padding-left: 300px;padding-right: 80px;cursor: pointer;">Browse</p></a>   
-  <a href="collect.html"style="text-decoration:none;color:black;"><p class="worknav"style="padding-left: 80px;padding-right: 80px;cursor: pointer;">Collections</p></a>   
-  <a href="pric.html"style="text-decoration:none;color:black;"> <p class="worknav"style="padding-left: 80px;padding-right: 300px;cursor: pointer;">Plan</p></a>   
+  <div class="workouts">
+    <p class="work"style="">Our Workouts<span class="red">.</span></p>
+    <br>
+<p class="maincontent">
+  At Rockway Fitness, we offer a variety of workouts designed to help you achieve your fitness goals. Whether you're looking to lose weight, build muscle, or improve your overall health, we have a workout program that will suit your needs. Our trainers will guide you through each workout, ensuring proper form and technique to maximize your results. We offer a range of classes, including strength training, cardio, and high-intensity interval training (HIIT). Join us today and discover the power of fitness.</p>
+  </p>
+<br>
+ </div>
+    <br>
+ <div class="worknav"style="text-align:center;">
+  <a href="workou.html"style="text-decoration:none;color:black;"><p class="worknav active-link"id="workn"style="">Browse</p></a>   
+  <a href="collect.html"style="text-decoration:none;color:black;"><p class="worknav"id="workn2"style="">Collections</p></a>   
+  <a href="pric.html"style="text-decoration:none;color:black;"> <p class="worknav"id="workn3"style="">Plan</p></a>   
 </div>
-</div>
+<center><div class="worknavph"style="text-align:center;">
+  <a href="workou.html"style="text-decoration:none;color:black;"><p class="worknavph"style="">Browse</p></a>   
+  <a href="collect.html"style="text-decoration:none;color:black;"><p class="worknavph"style="">Collections</p></a>   
+  <a href="pric.html"style="text-decoration:none;color:black;"> <p class="worknavph"style="">Plan</p></a> 
+  </div> </center> 
+
 <br>
 <br>
 <br>
 <br>
 <div class="contbox active-tab"id="browser">
-    <p class=""style="font-size:48px;color:white;position:absolute;margin-top:20px;margin-left:50px;">Muscle Group</p>
-    <div class="firstcol"style="width:90%;height:250px;"><img src="body.jpg"style="width: 1200px;height:350px;border-radius:18px;">
+    <p class="conth1"style="">Muscle Group</p>
+    <div class="firstcol"style="width:100%;height:250px;"><img src="body.jpg"class="contimg"style="">
    </div>
     <br>
     <br>
@@ -387,8 +794,8 @@ display: block;
     <br>
     <br>
     <br>
-    <p class=""style="font-size:48px;color:white;position:absolute;margin-top:280px;margin-left:50px;">Workout Focus</p>
-    <div class="secndcol"style="width:90%;height:250px;margin-top:30px;"><img src="body2.jpg"style="width: 1200px;height:350px;border-radius:18px;">
+    <p class="conth2"style="">Workout Focus</p>
+    <div class="secndcol"style="width:100%;height:250px;margin-top:30px;"><img src="body2.jpg"class="contimg"style="">
         </div>
     <br>
     <br>
@@ -396,12 +803,12 @@ display: block;
     <br>
     <br>
     <br>
-    <p class=""style="font-size:48px;color:white;position:absolute;margin-top:280px;margin-left:50px;">Eqipments</p>
-    <div class="thrdcol"style="width:90%;height:250px;margin-top:30px;"><img src="body3.jpg"style="width: 1200px;height:350px;border-radius:18px;">
+    <p class="conth3"style="">Eqipments</p>
+    <div class="thrdcol"style="width:100%;height:250px;margin-top:30px;"><img src="body3.jpg"class="contimg"style="">
         </div>
 </div>
 
-  
+</div>  </div>  
 
 </div>  
   <br>
@@ -414,12 +821,12 @@ display: block;
         <br>
         <div class="footer-menu">
             <ul class="f-menu">
-                <li><a href="">Home</a></li>
-        <li><a href="">Workout</a></li>
-        <li><a href="">Pricing</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Testimonials</a></li>
-        <li><a href="">Blogs</a></li>
+                <li><a href="index.html">Home</a></li>
+        <li><a href="workou.html">Workout</a></li>
+        <li><a href="pric.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#testi">Testimonials</a></li>
+        <li><a href="blog.html">Blogs</a></li>
         <li><a href="">FAQs</a></li>
             </ul>
 
@@ -436,6 +843,67 @@ display: block;
     </div>
     </div>
 
+    <script>
+      'use strict';
     
+    // navbar variables
+    const navbarNav = document.querySelector('.navbar-nav');
+    const navbarToggleBtn = document.querySelector('.nav-toggle-btn');
+    
+    // navbar toggle functionality
+    navbarToggleBtn.addEventListener('click', function () {
+    
+      navbarNav.classList.toggle('active');
+      this.classList.toggle('active');
+    
+    });
+     </script>
+     
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+  apiKey: "AIzaSyB_AFcgzkoGZsd42LVnt8W0XSoCfRLV_CA",
+  authDomain: "rockway-proj.firebaseapp.com",
+  projectId: "rockway-proj",
+  storageBucket: "rockway-proj.appspot.com",
+  messagingSenderId: "913719884217",
+  appId: "1:913719884217:web:eb7db9c977121945275e68"
+};
+
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+  const analytics = getAnalytics(app);
+  const auth = getAuth();
+  console.log(app);
+
+
+
+  //----- Logout code start	  
+  document.getElementById("logout").addEventListener("click", function() {
+      signOut(auth).then(() => {
+          // Sign-out successful.
+          console.log('Sign-out successful.');
+          alert('Sign-out successful.');
+          document.getElementById('logout').style.display = 'none';
+          document.getElementById('loggedin').style.display = 'block';
+        }).catch((error) => {
+          // An error happened.
+          console.log('An error happened.');
+        });		  		  
+  });
+  //----- End
+
+</script>
 </body>
 </html>
+</body>
